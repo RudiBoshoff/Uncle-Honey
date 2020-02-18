@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container__nav {
+  background-color: #302e26;
+  position: fixed;
+  z-index: 900;
+  width: 100vw;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0rem 2rem;
+}
+
+.menu a {
+  color: white;
+  display: block;
+  padding: 1.5rem;
+}
+
+.menu li {
+  list-style: none;
+  white-space: nowrap;
+}
+
+.menu__items {
+  display: none;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  padding: 2rem 0;
+  width: 100%;
+  border-top: 0.1rem solid white;
+}
+
+.menu__items--display {
+  display: initial;
+}
+
+.menu__item {
+  text-align: center;
+}
+
+.menu__item:hover {
+  background: #444;
+}
+
+.menu__toggle {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.menu__toggle:hover {
+  cursor: pointer;
+}
+
+.menu__toggle a {
+  text-align: center;
+}
+
+.menu__toggle, .menu__logo {
+  font-size: 2.4rem;
+}
+
+.menu__logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__logo a p {
+  padding-left: 4rem;
+}
+
+.menu__logo a span {
+  font-size: 2.4rem;
+  color: #ffc639;
+  font-weight: 600;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__drip {
+  margin-top: 6.6rem;
+  width: 100%;
+}
+
+.hero__heading {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.hero__description {
+  line-height: 3rem;
+}
+
+.hero__secondary, .hero__primary {
+  padding: 1.6rem 8rem;
+  border-radius: 5rem;
+  color: #302e26;
+  font-weight: 600;
+}
+
+.hero__secondary {
+  border: 0.1rem solid #302e26;
+}
+
+.hero__primary {
+  background-color: #ffc639;
+}
+
+.hero__image {
+  width: 26rem;
+  height: auto;
+}
+
+.swiper {
+  background-color: #ffc639;
+}
+
+.swiper__heading {
+  font-size: 3.6rem;
+}
+
+.swiper__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: hidden;
+  width: 100vw;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  height: 100%;
+}
+
+.swiper__indicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper__dot {
+  margin: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: rgba(48, 46, 38, 0.3);
+}
+
+.swiper__dot--active {
+  background-color: #302e26;
+}
+
+.card {
+  margin-right: 3rem;
+  background: #fff;
+  border-radius: 4rem;
+  -webkit-box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
+  height: 60rem;
+  text-align: center;
+}
+
+.card__heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+  width: 36rem;
+}
+
+.card__description {
+  line-height: 3rem;
+}
+
+.card__link {
+  color: #fff;
+  background-color: #302e26;
+  padding: 1.6rem 5rem;
+  border-radius: 5rem;
+  font-weight: 600;
+}
+
+.active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.first {
+  margin-left: 2.4rem;
+}
+
+.tour__title {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.tour__card {
+  -webkit-box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #302e26;
+  border-radius: 4rem;
+  color: #fff;
+  text-align: center;
+}
+
+.tour__heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.tour__description {
+  line-height: 3rem;
+}
+
+.tour__price {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.tour__link {
+  font-weight: 600;
+  color: #302e26;
+  background-color: #ffc639;
+  padding: 1.6rem 5rem;
+  border-radius: 5rem;
+}
+
+.certified {
+  background-color: #302e26;
+  text-align: center;
+  color: #fff;
+}
+
+.certified__splash {
+  margin-top: -5.5rem;
+  width: 100%;
+}
+
+.certified__heading {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.certified__description {
+  line-height: 3rem;
+}
+
+@media all and (min-width: 600px) {
+  .menu {
+    padding: 0 3rem;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu__logo {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    padding: 0rem 1.5rem;
+  }
+  .menu__toggle {
+    display: none;
+  }
+  .menu__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: auto;
+    border: none;
+    padding: 0rem;
+  }
+  .menu__item {
+    margin: 0 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

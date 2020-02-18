@@ -1,0 +1,29 @@
+@media all and (min-width: 600px) {
+  .menu {
+    padding: 0 3rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      order: 0;
+      padding: 0rem 1.5rem;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__items {
+      display: flex;
+      justify-content: space-around;
+      width: auto;
+      border: none;
+      padding: 0rem;
+    }
+
+    &__item {
+      margin: 0 1.5rem;
+    }
+  }
+}
