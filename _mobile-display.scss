@@ -1,7 +1,7 @@
 @import "variables";
 
-.container {
-  &__nav {
+header {
+  nav {
     background-color: $color-dark-honey;
     position: fixed;
     z-index: 900;
@@ -66,6 +66,7 @@
 
   &__logo a {
     display: flex;
+
     p {
       padding-left: 4rem;
     }
@@ -251,5 +252,40 @@
 
   &__description {
     line-height: 3rem;
+  }
+}
+
+footer {
+  top: 0.5rem;
+  position: relative;
+  background-color: $color-dark-honey;
+  text-align: center;
+}
+
+.address {
+  &__heading {
+    color: $color-honey;
+    font-size: 3.6rem;
+  }
+
+  &__description {
+    color: $color-white;
+  }
+}
+
+.contact,
+.social {
+  &__heading {
+    color: $color-honey;
+    font-size: 3.6rem;
+  }
+
+  &__link {
+    color: $color-white;
+  }
+}
+
+.cartoon {
+  &__image {
   }
 }

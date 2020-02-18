@@ -21,7 +21,7 @@ a {
   text-decoration: none;
 }
 
-.container__nav {
+header nav {
   background-color: #302e26;
   position: fixed;
   z-index: 900;
@@ -294,6 +294,33 @@ a {
 
 .certified__description {
   line-height: 3rem;
+}
+
+footer {
+  top: 0.5rem;
+  position: relative;
+  background-color: #302e26;
+  text-align: center;
+}
+
+.address__heading {
+  color: #ffc639;
+  font-size: 3.6rem;
+}
+
+.address__description {
+  color: #fff;
+}
+
+.contact__heading,
+.social__heading {
+  color: #ffc639;
+  font-size: 3.6rem;
+}
+
+.contact__link,
+.social__link {
+  color: #fff;
 }
 
 @media all and (min-width: 600px) {
