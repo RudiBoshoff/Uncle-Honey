@@ -119,41 +119,6 @@ header {
   }
 }
 
-.swiper {
-  background-color: $color-honey;
-  &__heading {
-    font-size: 3.6rem;
-  }
-
-  &__cards {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    overflow-x: hidden;
-    width: 100vw;
-    position: relative;
-    user-select: none;
-    cursor: pointer;
-    height: 100%;
-  }
-
-  &__indicator {
-    display: flex;
-  }
-
-  &__dot {
-    margin: 0.5rem;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background: rgba(48, 46, 38, 0.3);
-
-    &--active {
-      background-color: $color-dark-honey;
-    }
-  }
-}
-
 .card {
   margin-right: 3rem;
   background: $color-white;
@@ -182,14 +147,6 @@ header {
     border-radius: 5rem;
     font-weight: 600;
   }
-}
-
-.active {
-  cursor: grabbing;
-}
-
-.first {
-  margin-left: 2.4rem;
 }
 
 .tour {

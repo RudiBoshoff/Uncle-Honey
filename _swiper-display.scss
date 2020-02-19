@@ -1,0 +1,42 @@
+@import "variables";
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  // adjust width of slides
+  width: 350px;
+  // left: -15px;
+
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination {
+  position: relative;
+  top: 20px;
+}
+
+.swiper-pagination-bullet {
+  margin: 0 5px;
+}
+
+.swiper-pagination-bullet-active {
+  background: $color-dark-honey;
+}
+
+.swiper {
+  height: 600px;
+  //   width: 420px;
+  background-color: $color-honey;
+}
