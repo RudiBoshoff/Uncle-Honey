@@ -6,6 +6,7 @@ header {
     position: fixed;
     z-index: 900;
     width: 100vw;
+    padding: 0 2rem;
   }
 }
 
@@ -14,7 +15,6 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0rem 2rem;
 
   a {
     color: white;
@@ -61,7 +61,7 @@ header {
 
   &__toggle,
   &__logo {
-    font-size: 2.4rem;
+    font-size: $font-medium;
   }
 
   &__logo a {
@@ -72,9 +72,9 @@ header {
     }
 
     span {
-      font-size: 2.4rem;
+      font-size: $font-medium;
       color: $color-honey;
-      font-weight: 600;
+      font-weight: $font-bold;
     }
   }
 }
@@ -90,22 +90,28 @@ header {
   }
 
   &__heading {
-    font-size: 3.6rem;
-    font-weight: 600;
+    margin-top: 1.5rem;
+    font-size: $font-large;
+    font-weight: $font-bold;
   }
 
   &__description {
-    line-height: 3rem;
+    text-align: center;
+    margin: 4rem 2rem;
+    line-height: $font-spaced;
   }
 
   &__secondary,
   &__primary {
     padding: 1.6rem 8rem;
-    border-radius: 5rem;
+    border-radius: $border-radius;
     color: $color-dark-honey;
-    font-weight: 600;
+    font-weight: $font-bold;
+    font-size: $font-medium;
   }
+
   &__secondary {
+    margin-bottom: 4rem;
     border: 0.1rem solid $color-dark-honey;
   }
 
@@ -114,38 +120,9 @@ header {
   }
 
   &__image {
+    margin: 6rem 0 12rem;
     width: 26rem;
     height: auto;
-  }
-}
-
-.card {
-  margin-right: 3rem;
-  background: $color-white;
-  border-radius: 4rem;
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
-  height: 60rem;
-  text-align: center;
-
-  &__image {
-  }
-
-  &__heading {
-    font-size: 2.4rem;
-    font-weight: 600;
-    width: 36rem;
-  }
-
-  &__description {
-    line-height: 3rem;
-  }
-
-  &__link {
-    color: $color-white;
-    background-color: $color-dark-honey;
-    padding: 1.6rem 5rem;
-    border-radius: 5rem;
-    font-weight: 600;
   }
 }
 

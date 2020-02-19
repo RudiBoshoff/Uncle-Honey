@@ -7,6 +7,8 @@
   box-sizing: border-box;
 }
 
+@import "variables";
+
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 html {
@@ -15,7 +17,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 1.8rem;
+  font-size: $font-small;
 }
 a {
   text-decoration: none;
