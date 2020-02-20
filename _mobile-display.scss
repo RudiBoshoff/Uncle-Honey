@@ -1,12 +1,16 @@
 @import "variables";
 
+.container {
+  min-width: 33rem;
+  width: 100vw;
+}
+
 header {
   nav {
     background-color: $color-dark-honey;
     position: fixed;
     z-index: 900;
     width: 100vw;
-    padding: 0 2rem;
   }
 }
 
@@ -15,11 +19,12 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid $color-white;
 
   a {
-    color: white;
+    color: $color-white;
     display: block;
-    padding: 1.5rem;
+    margin: 1.5rem 0;
   }
 
   li {
@@ -49,6 +54,7 @@ header {
 
   &__toggle {
     order: 1;
+    padding: 0 2rem;
 
     &:hover {
       cursor: pointer;
@@ -66,15 +72,16 @@ header {
 
   &__logo a {
     display: flex;
+    padding-left: 2rem;
 
     p {
-      padding-left: 4rem;
+      padding-left: 2rem;
+      font-weight: $font-bold;
     }
 
     span {
       font-size: $font-medium;
       color: $color-honey;
-      font-weight: $font-bold;
     }
   }
 }
@@ -83,6 +90,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   &__drip {
     margin-top: 6.6rem;
@@ -127,42 +135,51 @@ header {
 }
 
 .tour {
+  text-align: center;
+  margin: 0 2.4rem 12rem;
+
   &__title {
-    font-size: 3.6rem;
-    font-weight: 600;
+    margin: 12rem 0 4rem;
+    font-size: $font-large;
+    font-weight: $font-bold;
   }
 
   &__card {
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
     background-color: $color-dark-honey;
-    border-radius: 4rem;
+    border-radius: $border-radius;
     color: $color-white;
-    text-align: center;
   }
 
   &__image {
+    margin: 4rem 0;
+    width: 50%;
+    max-width: 20rem;
   }
 
   &__heading {
-    font-size: 2.4rem;
-    font-weight: 600;
+    font-size: $font-medium;
+    font-weight: $font-bold;
   }
 
   &__description {
-    line-height: 3rem;
+    margin: 4rem 5rem;
+    line-height: $font-spaced;
   }
 
   &__price {
-    font-size: 3.6rem;
-    font-weight: 600;
+    font-size: $font-large;
+    font-weight: $font-bold;
   }
 
   &__link {
-    font-weight: 600;
+    display: inline-block;
+    font-weight: $font-bold;
     color: $color-dark-honey;
     background-color: $color-honey;
     padding: 1.6rem 5rem;
-    border-radius: 5rem;
+    border-radius: $border-radius;
+    margin: 4rem 0;
   }
 }
 
@@ -170,56 +187,78 @@ header {
   background-color: $color-dark-honey;
   text-align: center;
   color: $color-white;
+  position: relative;
+  top: -8px;
+  height: 100%;
 
   &__splash {
-    margin-top: -5.5rem;
-    width: 100%;
+    background-color: $color-white;
+    width: 102vw;
+    z-index: 2000;
   }
 
   &__image {
+    margin-top: 1rem;
+    width: 50%;
+    max-width: 17.5rem;
   }
 
   &__heading {
-    font-size: 3.6rem;
-    font-weight: 600;
+    margin: 4rem 2.4rem;
+    font-size: $font-large;
+    font-weight: $font-bold;
   }
 
   &__description {
-    line-height: 3rem;
+    margin: 0 5rem;
+    padding-bottom: 12rem;
+    line-height: $font-spaced;
   }
 }
 
 footer {
-  top: 0.5rem;
-  position: relative;
+  padding: 0 2.4rem;
+  display: flex;
+  flex-direction: column;
   background-color: $color-dark-honey;
   text-align: center;
+  color: $color-white;
 }
 
 .address {
+  font-weight: $font-bold;
+
   &__heading {
     color: $color-honey;
-    font-size: 3.6rem;
+    font-size: $font-large;
   }
 
   &__description {
-    color: $color-white;
+    margin-top: 3rem;
+    font-size: $font-medium;
   }
 }
 
 .contact,
 .social {
+  font-weight: $font-bold;
+
   &__heading {
     color: $color-honey;
-    font-size: 3.6rem;
+    font-size: $font-large;
   }
 
   &__link {
+    margin-top: 3rem;
+    display: block;
+    font-size: $font-medium;
     color: $color-white;
   }
 }
 
 .cartoon {
   &__image {
+    width: 90%;
+    max-width: 380px;
   }
 }

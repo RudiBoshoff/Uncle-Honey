@@ -13,30 +13,39 @@ div .swiper-slide {
   border-radius: $border-radius;
   width: 80%;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
-  height: 62rem;
+  height: auto;
   margin: 2rem 0;
 }
 
 div .swiper-wrapper {
-  height: auto;
+  width: 100vw;
 }
 
-.swiper-pagination {
-  width: 100%;
+div .swiper-pagination {
+  position: initial;
+  margin-bottom: 4rem;
 }
 
 div .swiper-pagination-bullet {
   margin: 0 0.5rem;
   background: $color-dark-honey;
-}
+  height: 1rem;
+  width: 1rem;
+  transition: ease-in-out 0.3s;
 
-.swiper-pagination-bullet-active {
+  &-active {
+    width: 3rem;
+    border-radius: 1rem;
+    height: 1rem;
+  }
 }
 
 .swiper {
   // TOUBLE SHOOTING
   //   border: 2px dashed black;
-  height: 84rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
   background-color: $color-honey;
   text-align: center;
 
@@ -48,6 +57,8 @@ div .swiper-pagination-bullet {
 
   &__image {
     margin: 2rem 0 3rem;
+    width: 50%;
+    max-width: 17.5rem;
   }
 
   &__heading {

@@ -10,6 +10,7 @@
 
 html {
   font-size: 10px;
+  color: #302e26;
 }
 
 body {
@@ -21,12 +22,16 @@ a {
   text-decoration: none;
 }
 
+.container {
+  min-width: 33rem;
+  width: 100vw;
+}
+
 header nav {
   background-color: #302e26;
   position: fixed;
   z-index: 900;
   width: 100vw;
-  padding: 0 2rem;
 }
 
 .menu {
@@ -41,12 +46,13 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #fff;
 }
 
 .menu a {
-  color: white;
+  color: #fff;
   display: block;
-  padding: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .menu li {
@@ -80,6 +86,7 @@ header nav {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  padding: 0 2rem;
 }
 
 .menu__toggle:hover {
@@ -98,16 +105,17 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 2rem;
 }
 
 .menu__logo a p {
-  padding-left: 4rem;
+  padding-left: 2rem;
+  font-weight: 600;
 }
 
 .menu__logo a span {
   font-size: 2.4rem;
   color: #ffc639;
-  font-weight: 600;
 }
 
 .hero {
@@ -121,6 +129,7 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .hero__drip {
@@ -163,7 +172,13 @@ header nav {
   height: auto;
 }
 
+.tour {
+  text-align: center;
+  margin: 0 2.4rem 12rem;
+}
+
 .tour__title {
+  margin: 12rem 0 4rem;
   font-size: 3.6rem;
   font-weight: 600;
 }
@@ -174,7 +189,12 @@ header nav {
   background-color: #302e26;
   border-radius: 4rem;
   color: #fff;
-  text-align: center;
+}
+
+.tour__image {
+  margin: 4rem 0;
+  width: 50%;
+  max-width: 20rem;
 }
 
 .tour__heading {
@@ -183,6 +203,7 @@ header nav {
 }
 
 .tour__description {
+  margin: 4rem 5rem;
   line-height: 3rem;
 }
 
@@ -192,38 +213,64 @@ header nav {
 }
 
 .tour__link {
+  display: inline-block;
   font-weight: 600;
   color: #302e26;
   background-color: #ffc639;
   padding: 1.6rem 5rem;
-  border-radius: 5rem;
+  border-radius: 4rem;
+  margin: 4rem 0;
 }
 
 .certified {
   background-color: #302e26;
   text-align: center;
   color: #fff;
+  position: relative;
+  top: -8px;
+  height: 100%;
 }
 
 .certified__splash {
-  margin-top: -5.5rem;
-  width: 100%;
+  background-color: #fff;
+  width: 102vw;
+  z-index: 2000;
+}
+
+.certified__image {
+  margin-top: 1rem;
+  width: 50%;
+  max-width: 17.5rem;
 }
 
 .certified__heading {
+  margin: 4rem 2.4rem;
   font-size: 3.6rem;
   font-weight: 600;
 }
 
 .certified__description {
+  margin: 0 5rem;
+  padding-bottom: 12rem;
   line-height: 3rem;
 }
 
 footer {
-  top: 0.5rem;
-  position: relative;
+  padding: 0 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #302e26;
   text-align: center;
+  color: #fff;
+}
+
+.address {
+  font-weight: 600;
 }
 
 .address__heading {
@@ -232,7 +279,13 @@ footer {
 }
 
 .address__description {
-  color: #fff;
+  margin-top: 3rem;
+  font-size: 2.4rem;
+}
+
+.contact,
+.social {
+  font-weight: 600;
 }
 
 .contact__heading,
@@ -243,7 +296,15 @@ footer {
 
 .contact__link,
 .social__link {
+  margin-top: 3rem;
+  display: block;
+  font-size: 2.4rem;
   color: #fff;
+}
+
+.cartoon__image {
+  width: 90%;
+  max-width: 380px;
 }
 
 div .swiper-container {
@@ -257,25 +318,43 @@ div .swiper-slide {
   width: 80%;
   -webkit-box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
-  height: 62rem;
+  height: auto;
   margin: 2rem 0;
 }
 
 div .swiper-wrapper {
-  height: auto;
+  width: 100vw;
 }
 
-.swiper-pagination {
-  width: 100%;
+div .swiper-pagination {
+  position: initial;
+  margin-bottom: 4rem;
 }
 
 div .swiper-pagination-bullet {
   margin: 0 0.5rem;
   background: #302e26;
+  height: 1rem;
+  width: 1rem;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+div .swiper-pagination-bullet-active {
+  width: 3rem;
+  border-radius: 1rem;
+  height: 1rem;
 }
 
 .swiper {
-  height: 84rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
   background-color: #ffc639;
   text-align: center;
 }
@@ -288,6 +367,8 @@ div .swiper-pagination-bullet {
 
 .swiper__image {
   margin: 2rem 0 3rem;
+  width: 50%;
+  max-width: 17.5rem;
 }
 
 .swiper__heading {
@@ -311,7 +392,7 @@ div .swiper-pagination-bullet {
   display: inline-block;
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 830px) {
   .menu {
     padding: 0 3rem;
     -ms-flex-wrap: nowrap;
