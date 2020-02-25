@@ -36,19 +36,31 @@
       </header>
 
       <section class="hero">
-        <img class="hero__drip" src="/Images/header-honey.svg" alt="" />
-        <h1 class="hero__heading">Sustainable Honey</h1>
-        <p class="hero__description">
-          We at Uncle Honey sell a variety of sustainable honey products to suit
-          your every need. Visit our store today to get yours.
-        </p>
-        <a class="hero__secondary" href="">Learn More</a>
-        <a class="hero__primary" href="">Shop Now</a>
+        <img class="hero__drip mobile" src="/Images/header-honey.svg" alt="" />
         <img
-          class="hero__image"
-          src="/Images/hero-image.png"
-          alt="honey jar with bees"
+          class="hero__drip desktop"
+          src="/Images/header-honey-desktop.svg"
+          alt=""
         />
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__heading">Sustainable Honey</h1>
+            <p class="hero__description">
+              We at Uncle Honey sell a variety of sustainable honey products to
+              suit your every need. Visit our store today to get yours.
+            </p>
+            <div class="hero__buttons">
+              <a class="hero__secondary" href="">Learn More</a>
+              <a class="hero__primary" href="">Shop Now</a>
+            </div>
+          </div>
+          <img
+            class="hero__image"
+            src="/Images/hero-image.svg"
+            alt="honey jar with bees"
+          />
+        </div>
+        <!-- TODO: add scroll image -->
       </section>
 
       <section class="swiper">
@@ -174,7 +186,20 @@
         <div class="address">
           <h3 class="address__heading">Address:</h3>
           <p class="address__description">
-            219 Honey Cresent Sweetville Germany
+            <a
+              class="address__link"
+              href="https://www.google.com/maps/search/219+Honey+Cresent,+Sweetville,+Germany/@-25.7681007,28.0250738,11z/data=!3m1!4b1"
+            >
+              <p>
+                219 Honey Cresent
+              </p>
+              <p>
+                Sweetville
+              </p>
+              <p>
+                Germany
+              </p>
+            </a>
           </p>
         </div>
         <div class="contact">

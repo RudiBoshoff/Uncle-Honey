@@ -14,7 +14,8 @@ $(function() {
   });
 });
 
-// VANILLA JS SWIPER
+// VANILLA JS SWIPER NOW REPLACED WITH SWIPER.JS
+
 // const slider = document.querySelector(".swiper__cards");
 // let isDown = false;
 // let startX;

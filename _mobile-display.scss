@@ -1,5 +1,13 @@
 @import "variables";
 
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
 .container {
   min-width: 33rem;
   width: 100vw;
@@ -47,8 +55,11 @@ header {
   &__item {
     text-align: center;
 
-    &:hover {
-      background: #444;
+    a {
+      padding: 1rem 1.5rem;
+      &:hover {
+        background: #444;
+      }
     }
   }
 
@@ -107,6 +118,12 @@ header {
     text-align: center;
     margin: 4rem 2rem;
     line-height: $font-spaced;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3rem;
   }
 
   &__secondary,
@@ -193,7 +210,7 @@ header {
 
   &__splash {
     background-color: $color-white;
-    width: 102vw;
+    width: 100%;
     z-index: 2000;
   }
 
@@ -227,25 +244,37 @@ footer {
 
 .address {
   font-weight: $font-bold;
+  margin: 9rem 1rem;
 
   &__heading {
     color: $color-honey;
     font-size: $font-large;
+    margin-bottom: 3rem;
   }
 
   &__description {
-    margin-top: 3rem;
     font-size: $font-medium;
+  }
+
+  &__link {
+    display: block;
+    font-size: $font-medium;
+    color: $color-white;
+    p {
+      margin-top: 3rem;
+    }
   }
 }
 
 .contact,
 .social {
+  margin: 0 1rem 9rem;
   font-weight: $font-bold;
 
   &__heading {
     color: $color-honey;
     font-size: $font-large;
+    margin-bottom: 3rem;
   }
 
   &__link {
