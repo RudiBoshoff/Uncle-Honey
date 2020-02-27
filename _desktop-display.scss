@@ -36,8 +36,6 @@
   }
 
   .hero {
-    margin-bottom: 70rem;
-
     &__drip {
       margin-top: 7.8rem;
     }
@@ -84,6 +82,89 @@
     &__primary {
       margin-left: 4rem;
     }
+
+    &__scroll {
+      position: relative;
+      top: -2rem;
+      width: 40%;
+      margin-left: 33rem;
+      max-width: 67rem;
+      margin-bottom: 12rem;
+    }
+  }
+
+  .process {
+    // TOUBLE SHOOTING
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    align-items: center;
+
+    &__title {
+      margin-bottom: 1rem;
+      font-size: $font-large;
+      color: $color-dark-honey;
+      font-weight: $font-bold;
+    }
+
+    &__container {
+      // TOUBLE SHOOTING
+      // border: 2px dashed black;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+.card {
+  box-shadow: 10px 10px 50px rgba($color: #000000, $alpha: 0.1);
+  border-radius: $border-radius;
+  width: 40rem;
+  margin: 6rem 5rem;
+
+  &__title {
+    font-size: $font-large;
+    padding: 4rem 0 2rem;
+    font-weight: $font-bold;
+  }
+
+  &__image {
+    margin: 2rem 0 3rem;
+    width: 50%;
+    max-width: 17.5rem;
+  }
+
+  &__heading {
+    font-size: $font-medium;
+    font-weight: $font-bold;
+  }
+
+  &__description {
+    line-height: $font-spaced;
+    margin: 3.4rem;
+  }
+
+  &__link {
+    color: $color-white;
+    font-size: $font-medium;
+    font-weight: $font-bold;
+    background-color: $color-dark-honey;
+    padding: 1.6rem 3.8rem;
+    border-radius: $border-radius;
+    margin-bottom: 3rem;
+    display: inline-block;
+  }
+}
+
+@media all and (min-width: 990px) {
+  .hero {
+    &__scroll {
+      margin-left: 30rem;
+      top: -4rem;
+    }
   }
 }
 
@@ -97,6 +178,20 @@
       margin: 6rem 0;
       width: 80%;
     }
+
+    &__scroll {
+      margin-left: 25rem;
+      top: -2rem;
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .hero {
+    &__scroll {
+      margin-left: 15rem;
+      top: -3rem;
+    }
   }
 }
 
@@ -105,6 +200,21 @@
     &__description {
       margin: 6rem 0;
       width: 42%;
+    }
+
+    &__scroll {
+      margin-left: 10rem;
+      top: -3.5rem;
+    }
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .hero {
+    &__scroll {
+      margin-left: 10rem;
+      top: -4rem;
+      left: -5rem;
     }
   }
 }

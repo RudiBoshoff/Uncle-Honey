@@ -468,9 +468,6 @@ div .swiper-pagination-bullet-active {
   .menu__item {
     margin: 0 1.5rem;
   }
-  .hero {
-    margin-bottom: 70rem;
-  }
   .hero__drip {
     margin-top: 7.8rem;
   }
@@ -524,6 +521,92 @@ div .swiper-pagination-bullet-active {
   .hero__primary {
     margin-left: 4rem;
   }
+  .hero__scroll {
+    position: relative;
+    top: -2rem;
+    width: 40%;
+    margin-left: 33rem;
+    max-width: 67rem;
+    margin-bottom: 12rem;
+  }
+  .process {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .process__title {
+    margin-bottom: 1rem;
+    font-size: 3.6rem;
+    color: #302e26;
+    font-weight: 600;
+  }
+  .process__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.card {
+  -webkit-box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 4rem;
+  width: 40rem;
+  margin: 6rem 5rem;
+}
+
+.card__title {
+  font-size: 3.6rem;
+  padding: 4rem 0 2rem;
+  font-weight: 600;
+}
+
+.card__image {
+  margin: 2rem 0 3rem;
+  width: 50%;
+  max-width: 17.5rem;
+}
+
+.card__heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.card__description {
+  line-height: 3rem;
+  margin: 3.4rem;
+}
+
+.card__link {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 600;
+  background-color: #302e26;
+  padding: 1.6rem 3.8rem;
+  border-radius: 4rem;
+  margin-bottom: 3rem;
+  display: inline-block;
+}
+
+@media all and (min-width: 990px) {
+  .hero__scroll {
+    margin-left: 30rem;
+    top: -4rem;
+  }
 }
 
 @media all and (min-width: 1100px) {
@@ -534,12 +617,35 @@ div .swiper-pagination-bullet-active {
     margin: 6rem 0;
     width: 80%;
   }
+  .hero__scroll {
+    margin-left: 25rem;
+    top: -2rem;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .hero__scroll {
+    margin-left: 15rem;
+    top: -3rem;
+  }
 }
 
 @media all and (min-width: 1300px) {
   .hero__description {
     margin: 6rem 0;
     width: 42%;
+  }
+  .hero__scroll {
+    margin-left: 10rem;
+    top: -3.5rem;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .hero__scroll {
+    margin-left: 10rem;
+    top: -4rem;
+    left: -5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
