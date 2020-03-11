@@ -17,16 +17,16 @@
         <nav>
           <ul class="menu">
             <li class="menu__logo">
-              <a href="#">
+              <a href="#home">
                 <img src="/Images/LOGO.png" alt="Uncle Honey Logo" />
                 <p>UNCLE <span>HONEY</span></p>
               </a>
             </li>
             <div class="menu__items">
-              <li class="menu__item"><a href="#">Home</a></li>
-              <li class="menu__item"><a href="#">About</a></li>
-              <li class="menu__item"><a href="#">Shop</a></li>
-              <li class="menu__item"><a href="#">Contact</a></li>
+              <li class="menu__item"><a href="#home">Home</a></li>
+              <li class="menu__item"><a href="#about">About</a></li>
+              <li class="menu__item"><a href="#shop">Shop</a></li>
+              <li class="menu__item"><a href="#contact">Contact</a></li>
             </div>
             <li class="menu__toggle">
               <a><i class="fas fa-bars"></i></a>
@@ -35,7 +35,7 @@
         </nav>
       </header>
 
-      <section class="hero">
+      <section class="hero" id="home">
         <img class="hero__drip mobile" src="/Images/header-honey.svg" alt="" />
         <img
           class="hero__drip desktop"
@@ -50,8 +50,8 @@
               suit your every need. Visit our store today to get yours.
             </p>
             <div class="hero__buttons">
-              <a class="hero__secondary" href="">Learn More</a>
-              <a class="hero__primary" href="">Shop Now</a>
+              <a class="hero__secondary button" href="">Learn More</a>
+              <a class="hero__primary button" href="">Shop Now</a>
             </div>
           </div>
           <img
@@ -60,7 +60,6 @@
             alt="honey jar with bees"
           />
         </div>
-        <!-- TODO: add scroll image -->
         <img
           class="hero__scroll desktop"
           src="/Images/hero-scroll.svg"
@@ -224,13 +223,14 @@
                 stunning variety of honey products for you to spoil yourself or
                 a loved one.
               </p>
-              <a href="" class="card__link">Shop Now</a>
+              <a href="" class="card__link button">Shop Now</a>
             </div>
           </div>
         </div>
       </section>
 
       <section class="tour">
+        <img class="tour__background desktop" src="/Images/Tour-image.svg" alt="bees travelling">
         <h1 class="tour__title">Book a Tour</h1>
         <div class="tour__card">
           <img
@@ -244,7 +244,7 @@
             making and sample our quality products.
           </p>
           <h1 class="tour__price">€ 50 pp</h1>
-          <a class="tour__link" href="">Book a Tour</a>
+          <a class="tour__link button" href="">Book a Tour</a>
         </div>
       </section>
 

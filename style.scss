@@ -25,6 +25,11 @@ a {
   text-decoration: none;
 }
 
+.button:hover {
+  background-color: $color-dark-honey;
+  color: $color-honey;
+}
+
 @import "mobile-display";
 @import "swiper-display";
 @import "desktop-display";

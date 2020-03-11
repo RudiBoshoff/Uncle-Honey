@@ -152,8 +152,11 @@ header {
 }
 
 .tour {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 2.4rem 12rem;
+  text-align: center;
 
   &__title {
     margin: 12rem 0 4rem;
@@ -166,6 +169,7 @@ header {
     background-color: $color-dark-honey;
     border-radius: $border-radius;
     color: $color-white;
+    width: 80%;
   }
 
   &__image {
@@ -197,6 +201,11 @@ header {
     padding: 1.6rem 5rem;
     border-radius: $border-radius;
     margin: 4rem 0;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-dark-honey;
+    }
   }
 }
 

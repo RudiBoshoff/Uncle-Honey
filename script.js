@@ -1,5 +1,5 @@
-// TOGGLE MENU
 $(function() {
+  // TOGGLE MENU
   $(".menu__toggle").click(function() {
     $(".menu__items").toggleClass("menu__items--display");
     $(this)
@@ -11,6 +11,13 @@ $(function() {
         .find("a")
         .html("<i class='fas fa-times'></i>");
     }
+  });
+
+  // ACTIVE LINKS
+  $("div").mouseenter(function() {
+    var id = $(this).attr("id");
+    $("a").removeClass("active");
+    $("[href=#" + id + "]").addClass("active");
   });
 });
 
