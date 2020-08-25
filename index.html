@@ -9,7 +9,8 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
   </head>
   <body>
     <div class="container">
@@ -226,7 +227,6 @@
               <a href="" class="card__link button">Shop Now</a>
             </div>
           </div>
-        </div>
       </section>
 
       <section class="tour">
@@ -255,20 +255,23 @@
           alt="certificate"
           class="certified__image"
         />
-        <h3 class="certified__heading">Certified Sustainable Honey</h3>
-        <p class="certified__description">
-          ​​What is sustainable honey? If the bees do not put it there, neither
-          do we. We do not use any antibiotics, pesticides, fungicides, or any
-          other "-cides" in our hives. We only sustainably harvest surplus as
-          they create honey to sustain their population. We never take honey and
-          feed back sugar water instead. We at Uncle Honey adhere stricly to the
-          guides imposed by the European Union Regulation for Organic
-          Beekeeping.
-        </p>
+        <div class="certified__container">
+          <h3 class="certified__heading">Certified Sustainable Honey</h3>
+          <p class="certified__description">
+            ​​What is sustainable honey? If the bees do not put it there, neither
+            do we. We do not use any antibiotics, pesticides, fungicides, or any
+            other "-cides" in our hives. We only sustainably harvest surplus as
+            they create honey to sustain their population. We never take honey and
+            feed back sugar water instead. We at Uncle Honey adhere stricly to the
+            guides imposed by the European Union Regulation for Organic
+            Beekeeping.
+          </p>
+        </div>
       </section>
 
-      <footer>
-        <div class="address">
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="address">
           <h3 class="address__heading">Address:</h3>
           <p class="address__description">
             <a
@@ -286,30 +289,35 @@
               </p>
             </a>
           </p>
-        </div>
-        <div class="contact">
+          </div>
+          <div class="contact">
           <h3 class="contact__heading">Contact:</h3>
           <a class="contact__link" href="">(629) 555-0129</a>
           <a class="contact__link" href="">Info@unclehoney.com</a>
           <a class="contact__link" href="">Sales@unclehoney.com</a>
-        </div>
-        <div class="social">
+          </div>
+          <div class="social">
           <h3 class="social__heading">Social:</h3>
           <a href="" class="social__link">Instagram</a>
           <a href="" class="social__link">Facebook</a>
           <a href="" class="social__link">Twitter</a>
+          </div>
+          <div class="cartoon">
+            <img
+              class="cartoon__image"
+              src="/Images/footer-cartoon.png"
+              alt="bee footer joke"
+            />
+         </div>
         </div>
-        <div class="cartoon">
-          <img
-            class="cartoon__image"
-            src="/Images/footer-cartoon.png"
-            alt="bee footer joke"
-          />
-        </div>
+        
+        
       </footer>
     </div>
+            </div>
     <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>

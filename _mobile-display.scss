@@ -66,6 +66,7 @@ header {
   &__toggle {
     order: 1;
     padding: 0 2rem;
+    margin-right: 1em;
 
     &:hover {
       cursor: pointer;
@@ -242,8 +243,7 @@ header {
   }
 }
 
-footer {
-  padding: 0 2.4rem;
+.footer {
   display: flex;
   flex-direction: column;
   background-color: $color-dark-honey;
@@ -295,6 +295,9 @@ footer {
 }
 
 .cartoon {
+  margin-top: 15rem;
+  width: 100%;
+
   &__image {
     width: 90%;
     max-width: 380px;

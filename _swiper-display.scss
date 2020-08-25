@@ -19,6 +19,7 @@ div .swiper-slide {
 
 div .swiper-wrapper {
   width: 100vw;
+  transform: translateX(-10%);
 }
 
 div .swiper-pagination {
@@ -57,7 +58,7 @@ div .swiper-pagination-bullet {
 
   &__image {
     margin: 2rem 0 3rem;
-    width: 50%;
+    height: 20%;
     max-width: 17.5rem;
   }
 

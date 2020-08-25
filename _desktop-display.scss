@@ -173,6 +173,53 @@
       max-width: 165rem;
     }
   }
+
+  .certified {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__image {
+      max-width: 23.5rem;
+      width: 15%;
+    }
+  }
+
+  .footer {
+    text-align: left;
+    a {
+      // font-size: 1.8rem;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-top: 10rem;
+    }
+
+    .address {
+      padding: 0;
+      margin: 0;
+    }
+
+    .contact {
+      padding: 0;
+      margin: 0;
+    }
+
+    .social {
+      padding: 0;
+      margin: 0;
+    }
+
+    .cartoon {
+      text-align: center;
+    }
+  }
 }
 
 @media all and (min-width: 990px) {
@@ -184,11 +231,17 @@
   }
 }
 
-@media all and (min-width: 1006px) {
+@media all and (min-width: 1000px) {
   .tour {
     &__background {
       top: 300rem;
       width: 90vw;
+    }
+  }
+
+  .certified {
+    &__description {
+      margin: 0 8rem;
     }
   }
 }
@@ -230,6 +283,10 @@
       top: 315rem;
     }
   }
+
+  .certified {
+    padding-bottom: 8rem;
+  }
 }
 
 @media all and (min-width: 1300px) {
@@ -251,6 +308,28 @@
       top: 325rem;
     }
   }
+
+  .certified {
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15rem;
+
+    &__heading {
+      margin: 0 0 3rem;
+    }
+
+    &__description {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__container {
+      padding-left: 5rem;
+      width: 70%;
+    }
+  }
 }
 
 @media all and (min-width: 1400px) {
@@ -268,13 +347,27 @@
       width: 75vw;
     }
   }
+
+  .certified {
+    &__container {
+      width: 60%;
+    }
+  }
 }
 
-@media all and (min-width: 1506px) {
+@media all and (min-width: 1500px) {
   .tour {
     &__background {
       top: 255rem;
       width: 90vw;
+    }
+  }
+}
+
+@media all and (min-width: 1700px) {
+  .certified {
+    &__container {
+      width: 50%;
     }
   }
 }
