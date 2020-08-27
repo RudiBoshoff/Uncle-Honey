@@ -7,3 +7,4 @@ TODO:
   1. improve original layouts to reduce media queries using clamp and other newly acquired knowledge.
   2. improve button accessibility (focus, hover, click,etc.)
   3. add aria tags
+  4. Host app on Heroku
