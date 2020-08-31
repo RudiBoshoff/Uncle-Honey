@@ -4,6 +4,9 @@ The app makes use of swiper.js when in mobile to cycle through the different hon
 
 Screen Shots:
 <p>![uncle-honey-mobile](https://user-images.githubusercontent.com/30492583/91684463-ea12bc80-eb57-11ea-886b-ac13db515482.png)</p>
+<p>![uncle-honey-desktop](https://user-images.githubusercontent.com/30492583/91684481-f9920580-eb57-11ea-969f-bcabd2d3f18a.png)</p>
+
+<p>https://user-images.githubusercontent.com/30492583/91684481-f9920580-eb57-11ea-969f-bcabd2d3f18a.png</p>
 
 TODO:
   1. improve original layouts to reduce media queries using clamp and other newly acquired knowledge.
